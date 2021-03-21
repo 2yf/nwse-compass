@@ -1,0 +1,15 @@
+name: nwse-Kompas
+prefix: nwse-Kompas
+main: me.nwse.Compass.PluginBootstrap
+
+version: 1.2
+api-version: 1.16
+description: Plugin na kompas
+author: nwse
+
+commands:
+  kompas:
+    aliases:
+      - compass
+      - track
+      - tracker

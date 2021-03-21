@@ -1,0 +1,42 @@
+# Variables:
+# %target-name% - returns target's nickname
+# %target-world% - returns target's world
+
+messages:
+  # tells the player if target is not specified (player must run /compass <nick> command)
+  target-not-specified: "&cNie namierzasz zadnego gracza!"
+  
+  # tells the player if target is not online
+  target-offline: "&cGracz %target-name% jest offline!"
+  
+  # tells the player if target is not in overworld (the end, nether)
+  target-found-in-another-world: "&aPomyslnie namierzono swiat gracza %target-name%! Swiat: %target-world%"
+  
+  # tells the player if target is in overworld
+  target-found-in-overworld: "&aPomyslnie namierzono gracza %target-name%!"
+  
+  # tells the player that he has compass already in his equipment
+  player-has-compass-already: "&cPosiadasz juz kompas! Wyrzuc go i sprobuj ponownie."
+  
+  # tells the player that compass has been given successfully
+  compass-given-successfully: "&aPomyslnie nadano kompas! Od teraz namierza on %target-name%."
+  
+  # tells the player correct usage of command
+  correct-usage: "&cPoprawne uzycie: /kompas <gracz>."
+  
+  # format of actionbar message (Y level is always at the end of this message!)
+  target-y-level: "&aY gracza %target-name%: "
+
+config:
+
+  # compass update interval (in ticks)
+  # default: 0
+  compass-update-interval: 0
+  
+  # when true, compass will show target's y-level
+  # default: true
+  compass-should-show-y-level: true
+  
+  # when true, compass will track target even if not held in main hand (set to false or increase compass-update-interval when laggy)
+  # default: true
+  compass-should-update-itself: true
